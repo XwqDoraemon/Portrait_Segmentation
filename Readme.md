@@ -41,7 +41,7 @@ BiseNet-Resnet101
 
   <img src="images/image-20220228150958252.png" alt="image-20220228150958252" style="zoom:25%;" />
 
-  <img src="images/image-20220228152936895.png" style="zoom:25%;" />
+  <img src="images/image-20220228152936895.png" alt="image-20220228152936895"  style="zoom:25%;" />
 
   CEDiceloss = CEloss+Diceloss
 
@@ -113,7 +113,7 @@ BiseNet-Resnet101
 
   * infer后数据量1813
 
-在Automatic Portrait Matting数据集下训练得到模型
+在Automatic Portrait Matting 验证集下实验结果：
 
 | CE+DIceloss | 数据增强 | fusion | 增加数据 | miou   |
 | ----------- | -------- | ------ | -------- | ------ |
@@ -125,8 +125,10 @@ BiseNet-Resnet101
 
 ## result and badcase
 
-1. 孔洞部分分割效果差
+1. 孔洞部分分割效果差:
 
+   需要继续寻找相关孔洞数据
+   
    ![](images/0.917_00265.png)
 
 ### 效果
