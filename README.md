@@ -1,4 +1,4 @@
-## 人像分割
+## 基于flask框架人像分割
 
 ## 使用场景
 
@@ -33,15 +33,26 @@ BiseNet-Resnet101
 * Context分支采用快速下降分辨率的策略，使特征具有丰富的感受野
 * 最后利用特征融合模块FFM，将两个分支特征进行融合即可输出
 
+## Get Start
+
+### Train
+
+~~~shell
+sh sh/portrait_train.sh
+~~~
+### infer or badcase
+~~~shell
+sh sh/analysis_badcase.sh
+~~~
+### webapp
+~~~shell
+sh sh/web_app.sh
+~~~
 ## tricks
 
 * CEloss+Diceloss
 
   从概率和区域衡量模型
-
-  <img src="images/image-20220228150958252.png" alt="image-20220228150958252" style="zoom:25%;" />
-
-  <img src="images/image-20220228152936895.png" alt="image-20220228152936895"  style="zoom:25%;" />
 
   CEDiceloss = CEloss+Diceloss
 
